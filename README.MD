@@ -1,7 +1,7 @@
 # Ola-Task
 Steps to run this project
 
-`` 1) https://github.com/vivek12345/facebook-graph-api.git ``
+`` 1) git clone https://github.com/vivek12345/facebook-graph-api.git ``
 
 `` 2) yarn install ``
 
