@@ -1,0 +1,3 @@
+export default {
+	access_token: "EAACEdEose0cBAN0ARaxQBuDIX4Tsqmi6PxJ5qKK19AzjarKM2PBuzvePPkQZAKuf9lWhHNaeFV83Sd4t7Oaf6uQc042s0mXubbAglWrTxhZBOjwYaOyOoiJzeRbb93TfDukLYTGCMEHxxiVGwRZBkjKGERMGZB3pXreHvoWTyQZDZD"
+}

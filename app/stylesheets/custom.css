@@ -1,0 +1,111 @@
+/* Reset some important styling */
+html,body {
+	margin:0;
+	padding:0;
+}
+ol,ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+input,textarea {
+	margin: 0px;
+	height: 0px;
+	width:100%;
+	height:100%;
+	box-sizing: border-box;
+}
+fieldset,img {
+	border:0;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+/* Main task styling begins here */
+.custom-title {
+	padding: 10px;
+}
+.custom-body {
+	max-height: 500px;
+	overflow-y: scroll;
+}
+.uil-balls {
+	width: 100%;
+}
+.nav-tabs {
+	border-bottom: 2px solid #DDD;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+	border-width: 0;
+}
+.nav-tabs > li > a {
+	border: none; color: #666;
+}
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+	border: none;
+	color: #4285F4 !important;
+	background: transparent;
+}
+.nav-tabs > li > a::after {
+	content: "";
+	background: #4285F4;
+	height: 2px;
+	position: absolute;
+	width: 100%;
+	left: 0px;
+	bottom: -1px;
+	transition: all 250ms ease 0s;
+	transform: scale(0);
+}
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+	transform: scale(1);
+}
+.tab-nav > li > a::after {
+	background: #21527d none repeat scroll 0% 0%;
+	color: #fff;
+}
+.glyphicon-bookmark.active {
+	color:#FFBC00;
+}
+.bookmark-holder {
+	cursor: pointer;
+}
+.bs-callout {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #eee;
+	border-image: none;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px 1px 1px 5px;
+	margin-bottom: 5px;
+	padding: 20px;
+}
+.bs-callout:last-child {
+	margin-bottom: 0px;
+}
+.bs-callout h4 {
+	margin-bottom: 10px;
+	margin-top: 0;
+}
+.bs-callout-danger {
+	border-left-color: #d9534f;
+}
+.bs-callout-danger h4{
+	color: #d9534f;
+}
