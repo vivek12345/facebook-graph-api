@@ -8,6 +8,7 @@ export default class FixedTable extends Component {
 	handleSearchClick(event) {
 		event.preventDefault();
 		const query = document.getElementById('place-search').value;
+		if(!query.trim().length) return;
 		this.props.handleSearchClick(query);
 	}
 	handleBookmarkClick(event, place) {
@@ -78,19 +79,19 @@ export default class FixedTable extends Component {
 					<div className="panel-heading">
 						<div className="row">
 							<div className="col col-xs-6">
-								<h3 className="panel-title custom-title">Panel Heading</h3>
+								<h3 className="panel-title custom-title">Ola Task</h3>
 							</div>
 							<div className="col col-xs-6 text-right">
-								<div className="form-group">
+								<form className="form-group" onSubmit={ (event) => this.handleSearchClick(event) }>
 									<div className="input-group">
 										<input type="text" className="form-control" placeholder="Search for places..." id="place-search" />
 										<span className="input-group-btn">
-											<button className="btn btn-default search-btn" type="button" onClick={ (event) => this.handleSearchClick(event) }>
+											<button className="btn btn-default search-btn" type="submit">
 												<span>Search</span>
 											</button>
 										</span>
 									</div>
-								</div>
+								</form>
 							</div>
 						</div>
 					</div>
